@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "jest": true
+  },
+  "extends": [
+    "prettier",
+    "next",
+    "next/core-web-vitals"
+  ]
 }
