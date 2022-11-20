@@ -6,7 +6,7 @@ const config = {
   trailingComma: 'all',
   bracketSpacing: true,
   bracketSameLine: true,
-  singleAttributePerLine: true
+  singleAttributePerLine: true,
 }
 
 module.exports = config
