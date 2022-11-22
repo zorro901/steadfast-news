@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react'
 import '@assets/css/pages/storybook.css'
-import { Header } from '@components/header';
+import { Header } from '@components/organisms/Header/header';
 
 type User = {
   name: string

@@ -1,8 +1,8 @@
 "use client"
 import Image from 'next/image'
-import { Button } from './button'
 import './header.css'
 import IconSVG from '@assets/svg/icon.svg'
+import { Button } from '@components/atoms/Button/button';
 
 type User = {
   name: string
