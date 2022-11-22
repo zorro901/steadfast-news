@@ -1,17 +1,17 @@
-import React from 'react';
-
-import { Header } from './Header';
-import './page.css';
+"use client"
+import { useState } from 'react'
+import '@assets/css/pages/storybook.css'
+import { Header } from '@components/header';
 
 type User = {
-  name: string;
-};
+  name: string
+}
 
-export const Page: React.VFC = () => {
-  const [user, setUser] = React.useState<User>();
+export const Page = () => {
+  const [user, setUser] = useState<User>()
 
   return (
-    <article>
+    <>
       <Header
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
@@ -19,7 +19,7 @@ export const Page: React.VFC = () => {
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
       />
 
-      <section>
+      <main>
         <h2>Pages in Storybook</h2>
         <p>
           We recommend building UIs with a{' '}
@@ -36,6 +36,7 @@ export const Page: React.VFC = () => {
         <ul>
           <li>
             Use a higher-level connected component. Storybook helps you compose such data from the
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             "args" of child component stories
           </li>
           <li>
@@ -67,7 +68,7 @@ export const Page: React.VFC = () => {
           </svg>
           Viewports addon in the toolbar
         </div>
-      </section>
-    </article>
-  );
-};
+      </main>
+    </>
+  )
+}
