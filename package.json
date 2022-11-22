@@ -9,7 +9,9 @@
     "lint": "next lint",
     "format": "next lint --fix --dir .",
     "prepare": "husky install",
-    "test": "next lint"
+    "test": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -26,11 +28,21 @@
     "typescript": "4.9.3"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-alpha.52",
+    "@storybook/addon-interactions": "^7.0.0-alpha.52",
+    "@storybook/addon-links": "^7.0.0-alpha.52",
+    "@storybook/nextjs": "^7.0.0-alpha.52",
+    "@storybook/react": "^7.0.0-alpha.52",
+    "@storybook/react-vite": "^7.0.0-alpha.25",
+    "@storybook/testing-library": "^0.0.13",
     "cz-conventional-changelog": "^3.3.0",
     "cz-emoji-japanese": "^1.0.1",
+    "eslint-plugin-storybook": "^0.6.7",
     "git-cz": "^4.9.0",
     "husky": "^8.0.0",
-    "lint-staged": "^13.0.3"
+    "lint-staged": "^13.0.3",
+    "storybook": "^7.0.0-alpha.52",
+    "vite": "^3.2.4"
   },
   "config": {
     "commitizen": {
