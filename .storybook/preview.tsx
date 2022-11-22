@@ -1,6 +1,7 @@
 import { themes } from '@storybook/theming'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
-import '../src/assets/css/globals.css'
+// import '../src/assets/css/globals.css'
+import '../src/styles/dist.css'
 import { RouterContext } from 'next/dist/shared/lib/router-context'
 import * as NextImage from 'next/image'
 import { ImageProps } from 'next/dist/client/image';

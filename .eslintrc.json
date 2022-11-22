@@ -8,14 +8,16 @@
   },
   "extends": [
     "eslint:recommended",
-    //    "plugin:react/recommended",
-    //    "plugin:react-hooks/recommended",
-    //    "plugin:storybook/recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:storybook/recommended",
     "plugin:@typescript-eslint/recommended",
-    "next"
-    //    "next/core-web-vitals",
-    //    "prettier"
+    "plugin:tailwindcss/recommended",
+    "next",
+    "next/core-web-vitals",
+    "prettier"
   ],
+  "plugins": ["tailwindcss"],
   "rules": {
     "import/no-unresolved": "error",
     "react/react-in-jsx-scope": "off",
