@@ -14,7 +14,9 @@
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
     "storybook": "npx sb dev -p 6006 --no-open",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lint-staged": "lint-staged - config .lintstagedrc",
+    "commit": "./node_modules/cz-customizable/standalone.js"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -31,6 +33,9 @@
     "typescript": "4.8.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@commitlint/types": "^17.0.0",
     "@storybook/addon-essentials": "^7.0.0-alpha.52",
     "@storybook/addon-interactions": "^7.0.0-alpha.52",
     "@storybook/addon-links": "^7.0.0-alpha.52",
@@ -42,9 +47,11 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "autoprefixer": "^10.4.13",
+    "commitlint-config-gitmoji": "^2.2.6",
     "concurrently": "^7.6.0",
     "cypress": "^11.2.0",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
     "cz-emoji-japanese": "^1.0.1",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-storybook": "^0.6.7",
@@ -62,7 +69,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-emoji-japanese"
+      "path": "cz-customizable"
     }
   },
   "overrides": {
