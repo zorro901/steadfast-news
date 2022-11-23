@@ -37,3 +37,8 @@ next-env.d.ts
 
 # tailwindcss
 /src/styles/dist.css
+
+# cypress
+/src/test/videos/
+/src/test/fixtures/
+/src/test/screenshots/
